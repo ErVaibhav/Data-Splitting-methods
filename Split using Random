@@ -1,0 +1,12 @@
+import numpy as np
+import pandas as pd
+
+dataset = pd.read_csv('C:/Users/VT/Desktop/Dataset1.csv')
+#dataset = dataset.replace(np.nan, 0)
+
+np.random.seed = 42
+mask = np.random.rand(len(dataset)) < 0.8#train percentage
+train = dataset[msk]
+train =trn.replace(np.nan, 0)
+vald = dataset[~msk]
+vald =val.replace(np.nan, 0)
